@@ -11,6 +11,7 @@ python Pepmap.py
 
 Results will be wirtten to the specified outfile name. Last three columns ofyour outfile contains the new information as shown below
 
-Column[-3]  |Column[-2]|Column[-1]
-----|----|----
+Column[-3]          | Column[-2]                           | Column[-1]
+--------------------|--------------------------------------|-----------
 Peptide start in UP | Modification__modified position in UP| Indels(Yes/No)
+ 
