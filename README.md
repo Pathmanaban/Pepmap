@@ -24,7 +24,7 @@ Map the peptides to its corresponding protein sequence and locate the modificati
 
 #### example
 
-    python ProtMapPep.py -c unimodPTM.txt -s HUMAN -i infile.txt -o outfile.txt -p 2 -m 5 -a 7
+    python ProtMapPep.py -c unimodPTMs.txt -s HUMAN -i infile.txt -o outfile.txt -p 2 -m 5 -a 7
     
 
 ## Information written to outfile
