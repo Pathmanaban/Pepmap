@@ -35,8 +35,8 @@ def UPseqfetch(UPseqlis,accsn,pep):
 					return ("No",newpos1)
 				
 				
-def extract_mod():
-	with open('unimodptms.txt','r') as infilex:
+def extract_mod(configfile):
+	with open(configfile,'r') as infilex:
 		next(infilex,None)
 		modific=[]
 		for line in infilex:
@@ -51,7 +51,7 @@ def extract_mod():
 		
 	
 
-modifi=extract_mod()
+
 
 def map_and_locate():
 	
@@ -63,14 +63,18 @@ def map_and_locate():
 	parser.add_argument('-p','--pep',help='Column index of peptide in infile',required=True)
 	parser.add_argument('-m','--mod',help='column index of modified peptide in infile',required=True)
 	parser.add_argument('-a','--acc',help='column index of protein accession in infile',required=True)
+	parser.add_argument('-c','--conf',help='Config file used for searching',required=True)
 	args = vars(parser.parse_args())
-	if len(args)==6:
+	
+	if len(args)==7:
 		infile=args['ifile']
 		outfile=args['ofile']
 		propepindx=int(args['pep'])
 		pepindx=int(args['mod'])
 		accession=int(args['acc']) 
 		species='_'+args['sp']
+		ptmfile=args['conf']
+		modifi=extract_mod(ptmfile)
 		
 		with open(infile,'r') as infile1,open(outfile,'w') as outfile:
 				writer1 = csv.writer(outfile,delimiter='\t',quoting=csv.QUOTE_NONE,escapechar=' ')
