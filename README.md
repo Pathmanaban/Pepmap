@@ -27,7 +27,7 @@ Map the peptides to its corresponding protein sequence and locate the modificati
 
 ## Information written to outfile
 
-Results will be wirtten as tab delimited to the specified outfile name. Last three columns of your outfile contains the new information as shown below
+Results will be wirtten as tab delimited to the specified outfile name. Last three columns of your outfile contains the mapped information as shown below
 
     Column[-3]          | Column[-2]                           | Column[-1]
     --------------------|--------------------------------------|-----------
