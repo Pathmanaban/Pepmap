@@ -3,8 +3,22 @@ Map the peptides to its corresponding protein sequence and locate the modificati
 
 ## Usage
 
+    python Pepmap.py -s "species" -i "infile" -o "outfile" -p "pepindex" -m "modindex" -a "prot_acc_index"
 
-python Pepmap.py
+#### Description 
+    -s,--sp            species name(as in database): case sensitive
+  
+    -i,--ifile         infile name with extension
+  
+    -o,--ofile         outfile name with extension
+  
+    -p,--pep           Column index of peptide in infile
+
+    -m,--mod           column index of modified peptide in infile
+  
+    -a,--acc           column index of protein accession in infile
+
+    -h, --help         show this help message and exit
 
 
 ## Information written to outfile
