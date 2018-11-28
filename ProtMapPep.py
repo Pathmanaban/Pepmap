@@ -1,6 +1,6 @@
 
 """
-Pepmap.py
+ProtMapPep.py
 
 Created by Pathmanaban Ramasamy on 18th Sep 2018
 Copyright (c) 2018 Pathmanaban Ramasamy. All rights reserved.
