@@ -3,9 +3,11 @@ Map the peptides to its corresponding protein sequence and locate the modificati
 
 ## Usage
 
-    python Pepmap.py -s "species" -i "infile" -o "outfile" -p "pepindex" -m "modindex" -a "prot_acc_index"
+    python Pepmap.py -c "config file" -s "species" -i "infile" -o "outfile" -p "pepindex" -m "modindex" -a "prot_acc_index"
 
 #### Description 
+    -c, --conf         config file used for searching
+    
     -s,--sp            species name(as in database): case sensitive
   
     -i,--ifile         infile name with extension
@@ -22,7 +24,7 @@ Map the peptides to its corresponding protein sequence and locate the modificati
 
 #### example
 
-    python Pepmap.py -s HUMAN -i infile.txt -o outfile.txt -p 2 -m 5 -a 7
+    python Pepmap.py -c conf.txt -s HUMAN -i infile.txt -o outfile.txt -p 2 -m 5 -a 7
     
 
 ## Information written to outfile
