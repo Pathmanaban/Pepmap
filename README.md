@@ -20,12 +20,16 @@ Map the peptides to its corresponding protein sequence and locate the modificati
 
     -h, --help         show this help message and exit
 
+#### example
+
+    python Pepmap.py -s HUMAN -i infile.txt -o outfile.txt -p 2 -m 5 -a 7
+    
 
 ## Information written to outfile
 
-Results will be wirtten to the specified outfile name. Last three columns ofyour outfile contains the new information as shown below
+Results will be wirtten as tab delimited to the specified outfile name. Last three columns ofyour outfile contains the new information as shown below
 
-Column[-3]          | Column[-2]                           | Column[-1]
---------------------|--------------------------------------|-----------
-Peptide start in UP | Modification__modified position in UP| Indels(Yes/No)
+    Column[-3]          | Column[-2]                           | Column[-1]
+    --------------------|--------------------------------------|-----------
+    Peptide start in UP | Modification__modified position in UP| Indels(Yes/No)
  
