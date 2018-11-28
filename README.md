@@ -3,10 +3,10 @@ Map the peptides to its corresponding protein sequence and locate the modificati
 
 ## Usage
 
-    python ProtMapPep.py -c "config file" -s "species" -i "infile" -o "outfile" -p "pepindex" -m "modindex" -a "prot_acc_index"
+    python ProtMapPep.py -c "PTM file" -s "species" -i "infile" -o "outfile" -p "pepindex" -m "modindex" -a "prot_acc_index"
 
 #### Description 
-    -c, --conf         config file used for searching
+    -c, --conf         PTM file used for searching
     
     -s,--sp            species name(as in database): case sensitive
   
@@ -24,7 +24,7 @@ Map the peptides to its corresponding protein sequence and locate the modificati
 
 #### example
 
-    python ProtMapPep.py -c conf.txt -s HUMAN -i infile.txt -o outfile.txt -p 2 -m 5 -a 7
+    python ProtMapPep.py -c unimodPTM.txt -s HUMAN -i infile.txt -o outfile.txt -p 2 -m 5 -a 7
     
 
 ## Information written to outfile
